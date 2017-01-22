@@ -265,3 +265,4 @@ connectionStrings.config
 Logs/
 TEMP/
 umbraco.config
+NuGetBackup/
