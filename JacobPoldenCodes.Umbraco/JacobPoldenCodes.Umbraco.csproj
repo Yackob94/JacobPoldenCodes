@@ -244,90 +244,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Logs\UmbracoTraceLog.SURFACE-YACKOB.txt" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\AutoMapper.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\AutoMapper.Net4.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\businesslogic.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\ClientDependency.Core.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\ClientDependency.Core.Mvc.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\cms.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\controls.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\CookComputing.XmlRpcV2.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Examine.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\HtmlAgilityPack.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\ICSharpCode.SharpZipLib.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\ImageProcessor.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\ImageProcessor.Web.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\interfaces.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\log4net.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Lucene.Net.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\MarkdownSharp.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.ApplicationBlocks.Data.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.AspNet.Identity.Core.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.AspNet.Identity.Owin.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.CodeAnalysis.CSharp.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.CodeAnalysis.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.IO.RecyclableMemoryStream.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.Owin.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.Owin.Host.SystemWeb.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.Owin.Security.Cookies.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.Owin.Security.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.Owin.Security.OAuth.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\MiniProfiler.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\MySql.Data.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Newtonsoft.Json.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Owin.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Semver.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\SQLCE4Umbraco.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Collections.Immutable.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Data.SqlServerCe.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Data.SqlServerCe.Entity.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Net.Http.Formatting.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Reflection.Metadata.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Web.Helpers.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Web.Http.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Web.Http.WebHost.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Web.Mvc.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Web.Razor.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Web.WebPages.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\System.Web.WebPages.Razor.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\TidyNet.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Umbraco.Core.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\umbraco.DataLayer.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\umbraco.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\umbraco.editorControls.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\umbraco.MacroEngines.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Umbraco.ModelsBuilder.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\umbraco.providers.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\Umbraco.Web.UI.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\UmbracoExamine.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\bin\UrlRewritingNet.UrlRewriter.dll" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\grid.editors.config.js" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\cs-CZ.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\da-DK.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\de-DE.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\en-GB.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\en-US.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\es-ES.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\fr-FR.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\he-IL.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\it-IT.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\ja-JP.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\ko-KR.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\nb-NO.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\nl-NL.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\pl-PL.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\pt-BR.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\ru-RU.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\sv-SE.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Lang\zh-CN.user.xml" />
-    <Content Include="App_Data\TEMP\ClientDependency\SURFACE-YACKOB-3a8e60a973e40fff5249cdb2b129ff63-map.xml" />
-    <Content Include="App_Data\TEMP\DistCache\SURFACE-YACKOB\LMW3SVC1ROOT-lastsynced.txt" />
-    <Content Include="App_Data\TEMP\DistCache\SURFACE-YACKOB\LMW3SVC2ROOT-lastsynced.txt" />
     <Content Include="Content\Css\app.css">
       <DependentUpon>app.scss</DependentUpon>
     </Content>
@@ -360,6 +276,9 @@
     <Content Include="Content\Favicons\ms-icon-150x150.png" />
     <Content Include="Content\Favicons\ms-icon-310x310.png" />
     <Content Include="Content\Favicons\ms-icon-70x70.png" />
+    <Content Include="Content\Images\jpc_ico_hires.png" />
+    <Content Include="Content\Images\jpc_logo_hires.png" />
+    <Content Include="favicon.ico" />
     <Content Include="node_modules\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="node_modules\bootstrap\dist\css\bootstrap-theme.min.css" />
     <Content Include="node_modules\bootstrap\dist\css\bootstrap.css" />
@@ -412,49 +331,6 @@
     <Content Include="Views\Home.cshtml" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
-    <Content Include="App_Data\Logs\UmbracoTraceLog.SURFACE-YACKOB.txt.2017-01-18" />
-    <Content Include="App_Data\NuGetBackup\20170118-203200\CopyLogs\UmbracoBinBackup.log" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\404handlers.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\applications.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\BaseRestExtensions.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\ClientDependency.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\Dashboard.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\EmbeddedMedia.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\ExamineIndex.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\ExamineSettings.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\feedProxy.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\FileSystemProviders.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\imageprocessor\cache.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\imageprocessor\processing.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\imageprocessor\security.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\log4net.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\metablogConfig.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\scripting.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\tinyMceConfig.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\trees.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\umbracoSettings.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Config\UrlRewriting.config" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\CopyLogs\ConfigBackup.log" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\CopyLogs\UmbracoBackup.log" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\CopyLogs\UmbracoClientBackup.log" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\CopyLogs\UmbracoClientCopy.log" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\CopyLogs\UmbracoCopy.log" />
-    <Content Include="App_Data\NuGetBackup\20170118-203209\Web.config" />
-    <Content Include="App_Data\packages\created\createdPackages.config" />
-    <Content Include="App_Data\packages\installed\installedPackages.config" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\segments_9" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6.cfs" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\segments_2" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\segments.gen" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\segments_c" />
-    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_9.cfs" />
-    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.SURFACE-YACKOB.hash" />
-    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.SURFACE-YACKOB.list" />
-    <Content Include="App_Data\umbraco.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="package.json" />
@@ -475,6 +351,10 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="Views\Shared\_Navigation.cshtml" />
+    <Content Include="Views\Blog.cshtml" />
+    <Content Include="Views\BlogPost.cshtml" />
+    <Content Include="ImageGen.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -510,12 +390,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\BlogPostController.cs" />
+    <Compile Include="Controllers\CurriculumVitaeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NavigationSurfaceController.cs" />
     <Compile Include="Models\BaseRenderModel.cs" />
     <Compile Include="Models\BlogPost.cs" />
+    <Compile Include="Models\BlogPostRenderModel.cs" />
+    <Compile Include="Models\BlogRenderModel.cs" />
     <Compile Include="Models\CurriculumVitaeRenderModel.cs" />
     <Compile Include="Models\HomeRenderModel.cs" />
     <Compile Include="Models\Interfaces\IMetatData.cs" />
+    <Compile Include="Models\Navigation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -523,10 +410,6 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\NuGetBackup\20170118-203209\Umbraco\" />
-    <Folder Include="App_Data\NuGetBackup\20170118-203209\Umbraco_Client\" />
-    <Folder Include="App_Data\TEMP\FileUploads\" />
-    <Folder Include="App_Data\TEMP\Install\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <PropertyGroup>

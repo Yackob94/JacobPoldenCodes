@@ -266,3 +266,5 @@ Logs/
 TEMP/
 umbraco.config
 NuGetBackup/
+cache/
+Media/

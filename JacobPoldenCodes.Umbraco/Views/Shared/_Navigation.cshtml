@@ -1,0 +1,17 @@
+﻿@model Navigation
+
+<nav id="sidebar-wrapper" role="navigation">
+    <ul class="sidebar-nav">
+        <li>
+            <a id="close" class="menu-toggle" href="javascript:void(0)">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </li>
+        @foreach (var link in Model)
+        {
+            <li @(link.CurrentPage ? "class=active": string.Empty)>
+                <a href="@link.Url">@link.Title</a>
+            </li>
+        }
+    </ul>
+</nav>

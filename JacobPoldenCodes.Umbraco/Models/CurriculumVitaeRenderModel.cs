@@ -1,5 +1,4 @@
 ﻿using Umbraco.Core.Models;
-using Umbraco.Web.Models;
 
 namespace JacobPoldenCodes.Umbraco.Models
 {

@@ -1,3 +1,251 @@
-﻿@inherits UmbracoTemplatePage<CurriculumVitae>
+﻿@using ClientDependency.Core.Mvc
+@inherits UmbracoViewPage<BaseRenderModel>
+@{
+    Html.RequiresCss("~/Content/Css/app.css");
+    Html.RequiresCss("~/node_modules/bootstrap/dist/css/bootstrap.css");
+
+    Html.RequiresJs("~/node_modules/jquery/dist/jquery.js", 1);
+    Html.RequiresJs("~/node_modules/bootstrap/dist/js/bootstrap.js", 2);
+    Html.RequiresJs("~/Content/Scripts/app.js", 3);
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>@Model.Title | j[p]c</title>
+    <meta name="Description" content="@Model.Description" />
+    <meta name="author" content="Jacob Polden">
+    <link rel="apple-touch-icon" sizes="57x57" href="/Content/Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/Content/Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Content/Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/Content/Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Content/Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/Content/Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/Content/Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/Content/Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Content/Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/Content/Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Content/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/Content/Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Content/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/Content/Favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    @Html.RenderCssHere()
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <section class="section summary-section">
+                    <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
+                    <div class="summary">
+                        <p>
+                            I am an experienced developer, initially self-taught, evolving my skills throughout my professional career.
+                        </p>
+                        <p>
+                            In my career I have worked in a variety of environments and positions. I started my professional career with an Umbraco gold partner startup (Orcare Limited) as an Apprentice where I worked my way up to Development Lead. During my time at Orcare I wore many hats; deputising for the director, presenting in client pitches, managing new team members and leading on the Umbraco projects for our clients. Our clients included large charities, FTSE100 pharmaceuticals and financial institutions.
+                        </p>
+                        <p>
+                            After my time at Orcare I moved onto the Royal Institute of British Architects (RIBA) as part of the digital transformation programme. The role allowed me to create and establish my own processes and development patterns which quickly led me to being the architect of software projects and the mouthpiece of the development, where finally my responsibilities were formalised as Lead Developer at the RIBA.
+                        </p>
+                        <p>
+                            I am continually developing my skills, formally, by studying Computing & IT (BSc) with the Open University. Whilst also deeping my technical knowledge by reading, actively subscribing to <a href="https://app.pluralsight.com/profile/Yackob94">PluralSight</a>, working on personal projects and attending developer-centric meetups.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section experiences-section">
+                    <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">Lead Developer</h3>
+                                <div class="time">2016 - Present</div>
+                            </div>
+                            <div class="company">RIBA, London</div>
+                        </div>
+                        <div class="details">
+                            <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">Technical Developer</h3>
+                                <div class="time">2015 - 2016</div>
+                            </div>
+                            <div class="company">RIBA, London</div>
+                        </div>
+                        <div class="details">
+                            <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">Development Lead</h3>
+                                <div class="time">2013 - 2015</div>
+                            </div>
+                            <div class="company">Orcare Limited, Camberley</div>
+                        </div>
+                        <div class="details">
+                            <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">Software Developer</h3>
+                                <div class="time">2011 - 2013</div>
+                            </div>
+                            <div class="company">Orcare Limited, Camberley</div>
+                        </div>
+                        <div class="details">
+                            <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section projects-section">
+                    <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+                    <div class="intro">
+                        <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                    </div><!--//intro-->
+                    <div class="item">
+                        <span class="project-title"><a href="#hook">Velocity</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote, market and sell their products.</span>
+
+                    </div>
+                    <div class="item">
+                        <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span> -
+                        <span class="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
+                    </div>
+                    <div class="item">
+                        <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank">Tempo</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote their products or services and to attract users &amp; investors</span>
+                    </div>
+                    <div class="item">
+                        <span class="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Atom</a></span> - <span class="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
+                    </div>
+                    <div class="item">
+                        <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank">Delta</a></span> - <span class="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
+                    </div>
+                </section>
+
+                <section class="skills-section section">
+                    <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+                    <div class="skillset">
+                        <div class="item">
+                            <h3 class="level-title">Python &amp; Django</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="98%" style="width: 98%;">
+                                </div>
+                            </div><!--//level-bar-->
+                        </div>
+
+                        <div class="item">
+                            <h3 class="level-title">Javascript &amp; jQuery</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="98%" style="width: 98%;">
+                                </div>
+                            </div><!--//level-bar-->
+                        </div>
+
+                        <div class="item">
+                            <h3 class="level-title">Angular</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="98%" style="width: 98%;">
+                                </div>
+                            </div><!--//level-bar-->
+                        </div>
+
+                        <div class="item">
+                            <h3 class="level-title">HTML5 &amp; CSS</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="95%" style="width: 95%;">
+                                </div>
+                            </div><!--//level-bar-->
+                        </div>
+
+                        <div class="item">
+                            <h3 class="level-title">Ruby on Rails</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="85%" style="width: 85%;">
+                                </div>
+                            </div><!--//level-bar-->
+                        </div>
+
+                        <div class="item">
+                            <h3 class="level-title">Sketch &amp; Photoshop</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="60%" style="width: 60%;">
+                                </div>
+                            </div><!--//level-bar-->
+                        </div>
+
+                    </div>
+                </section><!--//skills-section-->
 
 
+            </div>
+            <div class="col-md-4">
+                <div class="profile-container">
+                    @*<img class="profile" src="assets/images/profile.png" alt="">*@
+                    <h1 class="name">Jacob Polden</h1>
+                    <h3 class="tagline">.NET Developer</h3>
+                </div>
+                <div class="contact-container container-block">
+                    <ul class="list-unstyled contact-list">
+                        <li class="email"><i class="fa fa-envelope"></i><a href="mailto: jacob@polden.codes">jacob@polden.codes</a></li>
+                        <li class="phone"><i class="fa fa-phone"></i><a href="tel:+447948393823">+447948 393 823</a></li>
+                        <li class="website"><i class="fa fa-globe"></i><a href="http://jacob.polden.codes" target="_blank">jacob.polden.codes</a></li>
+                        <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/jacobpolden/" target="_blank">linkedin.com/in/jacobpolden</a></li>
+                        <li class="github"><i class="fa fa-github"></i><a href="https://github.com/Yackob94" target="_blank">github.com/yackob94</a></li>
+                        <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/Yackob94" target="_blank">@@yackob94</a></li>
+                    </ul>
+                </div><!--//contact-container-->
+                <div class="education-container container-block">
+                    <h2 class="container-block-title">Education</h2>
+                    <div class="item">
+                        <h4 class="degree">BSc (Honours) Computing and IT</h4>
+                        <h5 class="meta">The Open University</h5>
+                        <div class="time">2012 - Present</div>
+                    </div>
+                    <div class="item">
+                        <h4 class="degree">Advanced Software Development Apprenticeship</h4>
+                        <h5 class="meta">QA Training</h5>
+                        <div class="time">2011 - 2012</div>
+                    </div>
+                    <div class="item">
+                        <h4 class="degree">AS Levels</h4>
+                        <h5 class="meta">Farnborough Sixth Form</h5>
+                        <div class="time">2010 - 2011</div>
+                    </div>
+                </div>
+                <div class="languages-container container-block">
+                    <h2 class="container-block-title">Languages</h2>
+                    <ul class="list-unstyled interests-list">
+                        <li>English <span class="lang-desc">(Native)</span></li>
+                    </ul>
+                </div>
+                <div class="interests-container container-block">
+                    <h2 class="container-block-title">Interests</h2>
+                    <ul class="list-unstyled interests-list">
+                        <li>Squash</li>
+                        <li>Reading</li>
+                        <li>Learning</li>
+                        <li>Meetups</li>
+                        <li>Personal Projects</li>
+                        <li>Cycling</li>
+                        <li>Cooking</li>
+                    </ul>
+                </div><!--//interests-->
+            </div>
+        </div>
+    </div>
+    @Html.RenderJsHere()
+</body>
+</html>

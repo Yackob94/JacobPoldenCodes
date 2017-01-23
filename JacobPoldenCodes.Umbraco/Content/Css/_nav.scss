@@ -27,7 +27,6 @@ $menuToggleTextIndent:20px;
 #close {
     font-size: 2rem;
     text-indent: $menuToggleTextIndent;
-    //color: $menuLinkColor;
 }
 
 #wrapper {
@@ -100,6 +99,14 @@ $menuToggleTextIndent:20px;
 
     li:hover {
         background: #000;
+    }
+
+    li.active {
+        background: rgba(0,0,0,.5);
+
+        a {
+            color: #fff;
+        }
     }
 }
 

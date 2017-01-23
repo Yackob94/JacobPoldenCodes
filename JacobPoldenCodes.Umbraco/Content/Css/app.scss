@@ -1,5 +1,33 @@
-﻿@import 'nav';
+﻿/*@import 'nav';*/
+
 body {
     overflow-x: hidden;
+    /*font-size: 16px !important;*/
+    /*line-height: 1.8 !important;*/
 }
 
+time {
+    color: rgba(0,0,0,.5);
+}
+
+article a {
+    color: #000;
+}
+
+.row-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .col-sm-middle {
+        vertical-align: middle;
+    }
+    .col-sm-height {
+        display: table-cell;
+        float: none !important;
+        height: 100%;
+    }
+}
