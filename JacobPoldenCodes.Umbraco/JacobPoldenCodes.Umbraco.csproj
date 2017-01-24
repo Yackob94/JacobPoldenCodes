@@ -250,6 +250,10 @@
     <Content Include="Content\Css\app.min.css">
       <DependentUpon>app.css</DependentUpon>
     </Content>
+    <Content Include="Content\Css\FontAwesome.css" />
+    <Content Include="Content\Css\FontAwesome.min.css">
+      <DependentUpon>FontAwesome.css</DependentUpon>
+    </Content>
     <Content Include="Content\Favicons\android-icon-144x144.png" />
     <Content Include="Content\Favicons\android-icon-192x192.png" />
     <Content Include="Content\Favicons\android-icon-36x36.png" />
@@ -276,6 +280,8 @@
     <Content Include="Content\Favicons\ms-icon-150x150.png" />
     <Content Include="Content\Favicons\ms-icon-310x310.png" />
     <Content Include="Content\Favicons\ms-icon-70x70.png" />
+    <Content Include="Content\Fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Images\CircleJacobSmall.png" />
     <Content Include="Content\Images\jpc_ico_hires.png" />
     <Content Include="Content\Images\jpc_logo_hires.png" />
     <Content Include="favicon.ico" />
@@ -355,6 +361,26 @@
     <Content Include="Views\Blog.cshtml" />
     <Content Include="Views\BlogPost.cshtml" />
     <Content Include="ImageGen.ashx" />
+    <Content Include="Content\Css\_cv.scss" />
+    <Content Include="Content\Fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Fonts\FontAwesome.otf" />
+    <Content Include="Content\Fonts\scss\font-awesome.scss" />
+    <Content Include="Content\Fonts\scss\_animated.scss" />
+    <Content Include="Content\Fonts\scss\_bordered-pulled.scss" />
+    <Content Include="Content\Fonts\scss\_core.scss" />
+    <Content Include="Content\Fonts\scss\_fixed-width.scss" />
+    <Content Include="Content\Fonts\scss\_icons.scss" />
+    <Content Include="Content\Fonts\scss\_larger.scss" />
+    <Content Include="Content\Fonts\scss\_list.scss" />
+    <Content Include="Content\Fonts\scss\_mixins.scss" />
+    <Content Include="Content\Fonts\scss\_path.scss" />
+    <Content Include="Content\Fonts\scss\_rotated-flipped.scss" />
+    <Content Include="Content\Fonts\scss\_screen-reader.scss" />
+    <Content Include="Content\Fonts\scss\_stacked.scss" />
+    <Content Include="Content\Fonts\scss\_variables.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

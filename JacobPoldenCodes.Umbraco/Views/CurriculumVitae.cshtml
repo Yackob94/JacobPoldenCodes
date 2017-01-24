@@ -2,6 +2,7 @@
 @inherits UmbracoViewPage<BaseRenderModel>
 @{
     Html.RequiresCss("~/Content/Css/app.css");
+    Html.RequiresCss("~/Content/Css/FontAwesome.css");
     Html.RequiresCss("~/node_modules/bootstrap/dist/css/bootstrap.css");
 
     Html.RequiresJs("~/node_modules/jquery/dist/jquery.js", 1);
@@ -36,10 +37,83 @@
     <meta name="theme-color" content="#ffffff">
     @Html.RenderCssHere()
 </head>
-<body>
+<body id="curriculumVitae">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-3 col-md-push-9 profile">
+
+                <div class="profile-container">
+                    <img class="profile-image" alt="Image of Jacob Polden" src="~/Content/Images/CircleJacobSmall.png" />
+                    <h1 class="name">Jacob Polden</h1>
+                    <h3 class="tagline">.NET Developer</h3>
+                </div>
+                <div class="contact-container container-block">
+                    <ul class="list-unstyled contact-list">
+                        <li class="email"><i class="fa fa-envelope"></i><a href="mailto: jacob@polden.codes">jacob@polden.codes</a></li>
+                        <li class="phone"><i class="fa fa-phone"></i><a href="tel:+447948393823">+44 (0) 7948 393 823</a></li>
+                        <li class="website"><i class="fa fa-globe"></i><a href="http://jacob.polden.codes" target="_blank">jacob.polden.codes</a></li>
+                        <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/jacobpolden/" target="_blank">linkedin.com/in/jacobpolden</a></li>
+                        <li class="github"><i class="fa fa-github"></i><a href="https://github.com/Yackob94" target="_blank">github.com/yackob94</a></li>
+                        <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/Yackob94" target="_blank">@@yackob94</a></li>
+                    </ul>
+                </div><!--//contact-container-->
+                <div class="education-container container-block">
+                    <h2 class="container-block-title">Education</h2>
+                    <div class="item">
+                        <h4 class="degree">BSc (Honours) Computing and IT</h4>
+                        <h5 class="meta">The Open University</h5>
+                        <div class="time">2012 - Present</div>
+                    </div>
+                    <div class="item">
+                        <h4 class="degree">Advanced Software Development Apprenticeship</h4>
+                        <h5 class="meta">QA Training</h5>
+                        <div class="time">2011 - 2012</div>
+                    </div>
+                    <div class="item">
+                        <h4 class="degree">AS Levels</h4>
+                        <h5 class="meta">Farnborough Sixth Form</h5>
+                        <div class="time">2010 - 2011</div>
+                    </div>
+                </div>
+                <div class="certifications-container container-block">
+                    <h2 class="container-block-title">Certifications</h2>
+                    <div class="item">
+                        <h4 class="degree">Umbraco Level 2</h4>
+                        <h5 class="meta">Umbraco</h5>
+                    </div>
+                    <div class="item">
+                        <h4 class="degree">Umbraco Level 1</h4>
+                        <h5 class="meta">Umbraco</h5>
+                    </div>
+                    <div class="item">
+                        <h4 class="degree">Foundation in Agile</h4>
+                        <h5 class="meta">BCS</h5>
+                    </div>
+                    <div class="item">
+                        <h4 class="degree">Software Development MTA</h4>
+                        <h5 class="meta">Microsoft</h5>
+                    </div>
+                </div>
+                <div class="languages-container container-block">
+                    <h2 class="container-block-title">Languages</h2>
+                    <ul class="list-unstyled interests-list">
+                        <li>English <span class="lang-desc">(Native)</span></li>
+                    </ul>
+                </div>
+                <div class="interests-container container-block">
+                    <h2 class="container-block-title">Interests</h2>
+                    <ul class="list-unstyled interests-list">
+                        <li>Squash</li>
+                        <li>Reading</li>
+                        <li>Learning</li>
+                        <li>Meetups</li>
+                        <li>Personal Projects</li>
+                        <li>Cycling</li>
+                        <li>Cooking</li>
+                    </ul>
+                </div><!--//interests-->
+            </div>
+            <div class="col-md-9 col-md-pull-3 career">
                 <section class="section summary-section">
                     <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
                     <div class="summary">
@@ -69,8 +143,10 @@
                             <div class="company">RIBA, London</div>
                         </div>
                         <div class="details">
-                            <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                            <p>"Building great new services, facilitating a first class digital experience for our members"</p>
+                            <p>
+                                Following the success of the projects launched in 2016, I took steps to formalise the responsibilities I had been undertaking throughout my role as Technical Developer. As the team formed, I had taken it upon myself to lead the technical design of projects and solve a consistent problem with our applications. Although the separate standalone applications had been successful, they were still separate and standalone. I put forward the idea of building a RESTful service using Web API that would connect all the various data repositories together, building business services, plus use domain language when describing RIBA objects: Member, Practice, CPD, etc. This was pitched to the Transformation Steering Group and approved. The API proved to be a great success and gave rise to opportunities within applications that had not been possible previously.
+                            </p>
                         </div>
                     </div>
                     <div class="item">
@@ -82,7 +158,10 @@
                             <div class="company">RIBA, London</div>
                         </div>
                         <div class="details">
-                            <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                            <p>"Building great new services, facilitating a first class digital experience for our members"</p>
+                            <p>
+                                After a long stint at Orcare I decided to move on to a larger more established organisation. I was brought in to start work on the Digital Transformation project. The RIBA at the time relied on entirely manual processes involving a lot of paper. A perk of being a newly created team meant that we had no existing process or standards to follow, this is something I took advantage of immediately. In a short space of time code was being reviewed, branching strategies established and solutions began to be standardised. The solutions themselves were commonly standalone ASP.NET MVC applications. As well as a new development environment, I also was rubbing shoulders with people who have varying technical skills. Due to the small team sizes, stakeholders often wore multiple Agile hats. This meant effective communication was essential. I had to make sure I was explaining, often complex, technical problems clearly.
+                            </p>
                         </div>
                     </div>
                     <div class="item">
@@ -96,10 +175,7 @@
                         <div class="details">
                             <p>"We build websites that work hard to improve your online profile and help you to sell more."</p>
                             <p>
-                                After 2 years of working at Orcare I was promoted to Development Lead. My role was expanded to include building principle features in Umbraco projects,
-                                be responsible for line managing 2 full time developers, 1 apprentice developer and overseeing 1-2 contractors. My goal was to ensure that projects
-                                met the high quality standards we strove for, whilst having technical oversight of overable deliverable. To support those responsibilities I liased directly with clients,
-                                complete project documentation and conduct workshops demonstrating thought leadership.
+                                After 2 years of working at Orcare I was promoted to Development Lead. My role was expanded to include building principle features in Umbraco projects, be responsible for line managing 2 full time developers, 1 apprentice developer and overseeing 1-2 contractors. My goal was to ensure that projects met the high-quality standards we strove for, whilst having technical oversight of the overall deliverable. To support those responsibilities, I liaised directly with clients, complete project documentation and conducted workshops demonstrating thought leadership.
                             </p>
                         </div>
                     </div>
@@ -114,9 +190,7 @@
                         <div class="details">
                             <p>"We build websites that work hard to improve your online profile and help you to sell more."</p>
                             <p>
-                                I initally joined Orcare as an Apprentice but within 10 months out of the 12 month course, I had completed and passed the apprenticeship where I was promoted to full Software Developer status.
-                                As Orcare was an Umbraco Gold Partner, I worked exlusively on Umbraco projects. The range of Umbraco projects varied from upgrades, complete rebuilds or entirely new creative solutions.
-                                I worked on Umbraco 4 - 6 during this time, tranisitioning from ASP.NET Web Forms to MVC.
+                                I initially joined Orcare as an Apprentice but within 10 months out of the 12-month course, I had completed and passed the apprenticeship where I was promoted to full Software Developer status. As Orcare was an Umbraco Gold Partner, I worked exclusively on Umbraco projects. The range of Umbraco projects varied from upgrades, complete rebuilds or entirely new creative solutions. I worked on Umbraco 4 - 6 during this time, transitioning from ASP.NET Web Forms to MVC.
                             </p>
                         </div>
                     </div>
@@ -125,14 +199,14 @@
                 <section class="section projects-section">
                     <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
                     <div class="intro">
-                        <p>The following are standout projects I have delivered in my career</p>
+                        <p>The following are standout projects I have delivered over my career:</p>
                     </div>
                     <div class="item">
                         <span class="project-title">Cube</span> -
                         <span class="project-tagline">
-                            RESTful Web API service. Providing secure access using implementing OAuth 2 to RIBA's membership database.
+                            RESTful Web API service built by following TDD methodologies. Providing secure access using implementing OAuth 2 to the RIBA's membership database.
                             Including exposing complex business processes like fee calculation, join submissions and member authentication.
-                            The web service is used by both RIBA and third parties, ensuring consistent, accurate data is always served to members.
+                            The web service is used by both the RIBA and third parties, ensuring consistent, accurate data is always served to members.
                         </span>
                     </div>
                     <div class="item">
@@ -156,7 +230,7 @@
                     </div>
                     <div class="item">
                         <span class="project-title">Promotions System for International Brewery (NDA)</span> -
-                        <span class="project-tagline">A responsive Umbraco as a Service (UaaS 7) solution that matched users to coupons based off implicit and explicit behaviours.</span>
+                        <span class="project-tagline">A responsive Umbraco as a Service (UaaS 7) solution that matched users to coupons based on their implicit and explicit behaviours.</span>
                     </div>
                     <div class="item">
                         <span class="project-title">Learning Management System for FTSE100 Pharma (NDA)</span> -
@@ -164,11 +238,11 @@
                     </div>
                     <div class="item">
                         <span class="project-title">Aston Barclay</span> -
-                        <span class="project-tagline">Car auction site in need of an upgrade from Umbraco 6 to 7 including rewrite of business services as source code was not available to development team. Services included ability to buy/bid/proxy bid on cars, live feeds of auction data, PDF generation, favourites centre and other personalisation options.</span>
+                        <span class="project-tagline">Car auction site in need of an upgrade from Umbraco 6 to 7 which included a rewrite of business services as the source code was not available to development team. Services included the ability to buy/bid/proxy bid on cars, live feeds of auction data, PDF generation, favourites centre and other personalisation options.</span>
                     </div>
                     <div class="item">
                         <span class="project-title">Sports Leaders UK</span> -
-                        <span class="project-tagline">Redesign and revamp of aging website. Upgrade from Umbraco 4, to Umbraco 6 and finally Umbraco 7. The Foundation framework was used to enable a responsive design, plus a full rewrite of ASP.NET code from Web Forms to MVC.</span>
+                        <span class="project-tagline">Redesign and revamp of their aging website. Upgrade from Umbraco 4, to Umbraco 6 and finally to Umbraco 7. The Foundation framework was used to enable a responsive design plus a full rewrite of ASP.NET code from Web Forms to MVC.</span>
                     </div>
                 </section>
 
@@ -176,51 +250,62 @@
                     <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
                     <div class="skillset">
                         <div class="item">
-                            <h3 class="level-title">Python &amp; Django</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="98%" style="width: 98%;">
+                            <h3 class="level-title">C# ASP.NET MVC</h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;">
+                                    <span class="sr-only">98% Complete</span>
                                 </div>
-                            </div><!--//level-bar-->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3 class="level-title">C# ASP.NET Web API</h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;">
+                                    <span class="sr-only">98% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3 class="level-title">Umbraco</h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;">
+                                    <span class="sr-only">98% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3 class="level-title">Javascript &amp; JQuery</h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                    <span class="sr-only">70% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3 class="level-title">HTML &amp; CSS (SASS)</h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                                    <span class="sr-only">80% Complete</span>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="item">
-                            <h3 class="level-title">Javascript &amp; jQuery</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="98%" style="width: 98%;">
+                            <h3 class="level-title">SQL Server</h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    <span class="sr-only">70% Complete</span>
                                 </div>
-                            </div><!--//level-bar-->
+                            </div>
                         </div>
 
                         <div class="item">
-                            <h3 class="level-title">Angular</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="98%" style="width: 98%;">
+                            <h3 class="level-title">Azure &amp; AWS</h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                                    <span class="sr-only">65% Complete</span>
                                 </div>
-                            </div><!--//level-bar-->
-                        </div>
-
-                        <div class="item">
-                            <h3 class="level-title">HTML5 &amp; CSS</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="95%" style="width: 95%;">
-                                </div>
-                            </div><!--//level-bar-->
-                        </div>
-
-                        <div class="item">
-                            <h3 class="level-title">Ruby on Rails</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="85%" style="width: 85%;">
-                                </div>
-                            </div><!--//level-bar-->
-                        </div>
-
-                        <div class="item">
-                            <h3 class="level-title">Sketch &amp; Photoshop</h3>
-                            <div class="level-bar">
-                                <div class="level-bar-inner" data-level="60%" style="width: 60%;">
-                                </div>
-                            </div><!--//level-bar-->
+                            </div>
                         </div>
 
                     </div>
@@ -228,59 +313,7 @@
 
 
             </div>
-            <div class="col-md-4">
-                <div class="profile-container">
-                    @*<img class="profile" src="assets/images/profile.png" alt="">*@
-                    <h1 class="name">Jacob Polden</h1>
-                    <h3 class="tagline">.NET Developer</h3>
-                </div>
-                <div class="contact-container container-block">
-                    <ul class="list-unstyled contact-list">
-                        <li class="email"><i class="fa fa-envelope"></i><a href="mailto: jacob@polden.codes">jacob@polden.codes</a></li>
-                        <li class="phone"><i class="fa fa-phone"></i><a href="tel:+447948393823">+447948 393 823</a></li>
-                        <li class="website"><i class="fa fa-globe"></i><a href="http://jacob.polden.codes" target="_blank">jacob.polden.codes</a></li>
-                        <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/jacobpolden/" target="_blank">linkedin.com/in/jacobpolden</a></li>
-                        <li class="github"><i class="fa fa-github"></i><a href="https://github.com/Yackob94" target="_blank">github.com/yackob94</a></li>
-                        <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/Yackob94" target="_blank">@@yackob94</a></li>
-                    </ul>
-                </div><!--//contact-container-->
-                <div class="education-container container-block">
-                    <h2 class="container-block-title">Education</h2>
-                    <div class="item">
-                        <h4 class="degree">BSc (Honours) Computing and IT</h4>
-                        <h5 class="meta">The Open University</h5>
-                        <div class="time">2012 - Present</div>
-                    </div>
-                    <div class="item">
-                        <h4 class="degree">Advanced Software Development Apprenticeship</h4>
-                        <h5 class="meta">QA Training</h5>
-                        <div class="time">2011 - 2012</div>
-                    </div>
-                    <div class="item">
-                        <h4 class="degree">AS Levels</h4>
-                        <h5 class="meta">Farnborough Sixth Form</h5>
-                        <div class="time">2010 - 2011</div>
-                    </div>
-                </div>
-                <div class="languages-container container-block">
-                    <h2 class="container-block-title">Languages</h2>
-                    <ul class="list-unstyled interests-list">
-                        <li>English <span class="lang-desc">(Native)</span></li>
-                    </ul>
-                </div>
-                <div class="interests-container container-block">
-                    <h2 class="container-block-title">Interests</h2>
-                    <ul class="list-unstyled interests-list">
-                        <li>Squash</li>
-                        <li>Reading</li>
-                        <li>Learning</li>
-                        <li>Meetups</li>
-                        <li>Personal Projects</li>
-                        <li>Cycling</li>
-                        <li>Cooking</li>
-                    </ul>
-                </div><!--//interests-->
-            </div>
+
         </div>
     </div>
     @Html.RenderJsHere()
