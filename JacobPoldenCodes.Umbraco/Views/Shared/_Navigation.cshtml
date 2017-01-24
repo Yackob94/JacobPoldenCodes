@@ -9,7 +9,7 @@
         </li>
         @foreach (var link in Model)
         {
-            <li @(link.CurrentPage ? "class=active": string.Empty)>
+            <li @(link.CurrentPage ? "class=active" : string.Empty)>
                 <a href="@link.Url">@link.Title</a>
             </li>
         }
