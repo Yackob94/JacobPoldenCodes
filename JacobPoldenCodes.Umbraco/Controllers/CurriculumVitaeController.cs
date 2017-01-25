@@ -13,7 +13,7 @@ namespace JacobPoldenCodes.Umbraco.Controllers
     {
         public override ActionResult Index(RenderModel model)
         {
-            var cv = new CurriculumVitaeRenderModel(model.Content);
+            var cv = new CurriculumVitaeRenderModel(model.Content) {BodyId = "curriculumVitae"};
             return base.Index(cv);
         }
     }

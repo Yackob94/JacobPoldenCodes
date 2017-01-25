@@ -12,6 +12,7 @@ namespace JacobPoldenCodes.Umbraco.Models
     {
         public string Title { get; set; }
         public string Description { get; set; }
+        public string BodyId { get; set; }
         private BaseRenderModel(IPublishedContent content, CultureInfo culture) : base(content, culture)
         {
             Title = content.GetProperty("title").DataValue.ToString();
