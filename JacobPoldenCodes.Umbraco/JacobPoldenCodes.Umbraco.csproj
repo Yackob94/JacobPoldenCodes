@@ -2981,6 +2981,8 @@
     <Content Include="Views\AltHome.cshtml" />
     <Content Include="Media\Web.config" />
     <None Include="Properties\PublishProfiles\JacobPoldenCodes - Web Deploy.pubxml" />
+    <Content Include="Umbraco\Install\Views\Web.config" />
+    <Content Include="Umbraco\Xslt\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
