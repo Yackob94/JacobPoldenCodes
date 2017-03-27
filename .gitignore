@@ -259,3 +259,13 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# Custom ignores
+connectionStrings.config
+Logs/
+TEMP/
+umbraco.config
+NuGetBackup/
+cache/
+Media/
+umbraco.config
