@@ -1,0 +1,155 @@
+﻿$navBarWidth: 250px;
+$menuLinkColor: #000;
+$menuItemLineHeight: 40px;
+$menuItemTextIndent: 40px;
+$menuToggleTextIndent:20px;
+
+@mixin transition($transitionSpeed) {
+    -webkit-transition: all $transitionSpeed ease;
+    -moz-transition: all $transitionSpeed ease;
+    -o-transition: all $transitionSpeed ease;
+    transition: all $transitionSpeed ease;
+}
+/* Overrides */
+.container-fluid {
+    padding-left: $menuToggleTextIndent !important;
+    padding-right: $menuToggleTextIndent !important;
+}
+/* Toggle Styles */
+#burger {
+    font-size: 2rem;
+    text-indent: $menuToggleTextIndent;
+    line-height: $menuItemLineHeight !important; //Bootstrap override
+    position: fixed;
+    z-index: 1000;
+    color: $menuLinkColor;
+}
+#close {
+    font-size: 2rem;
+    text-indent: $menuToggleTextIndent;
+}
+
+#wrapper {
+    padding-left: 0;
+    @include transition(0.5s);
+}
+
+#wrapper.toggled {
+    padding-left: $navBarWidth;
+
+    #sidebar-wrapper {
+        width: $navBarWidth;
+    }
+
+    #page-content-wrapper {
+        position: absolute;
+        margin-right: -$navBarWidth;
+    }
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: $navBarWidth;
+    width: 0;
+    height: 100%;
+    margin-left: -$navBarWidth;
+    overflow-y: auto;
+    background: #fff;
+    border-right: 5px solid #000;
+    @include transition(0.5s);
+}
+
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: $menuToggleTextIndent;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: $navBarWidth;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        text-indent: $menuItemTextIndent;
+        line-height: $menuItemLineHeight;
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: $menuLinkColor;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a:active, a:focus {
+            text-decoration: none;
+        }
+    }
+
+    li:hover {
+        background: #000;
+    }
+
+    li.active {
+        background: rgba(0,0,0,.5);
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+
+/*.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+
+    a {
+        color: $menuLinkColor;
+    }
+
+    a:hover {
+        color: #fff;
+        background: none;
+    }
+}*/
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: $navBarWidth;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: $navBarWidth;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: $menuToggleTextIndent 20%;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}

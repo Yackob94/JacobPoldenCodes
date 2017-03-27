@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Content/Css/app.css",
+    "inputFile": "Content/Css/app.scss"
+  },
+  {
+    "outputFile": "Content/Css/FontAwesome.css",
+    "inputFile": "Content/Fonts/scss/font-awesome.scss"
+  }
+]

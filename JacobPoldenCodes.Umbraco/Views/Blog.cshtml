@@ -1,0 +1,19 @@
+﻿@inherits UmbracoViewPage<BlogRenderModel>
+
+@foreach (var blogPost in Model.BlogPosts)
+{
+    <article>
+        <div class="row-height">
+            <div class="col-sm-2 hidden-xs col-sm-height col-sm-middle">
+                <img class="img-responsive" src="@blogPost.ThumbnailUrl" />
+            </div>
+            <div class="col-lg-10">
+                <a href="@blogPost.Url">
+                    <h2>@blogPost.Title</h2>
+                </a>
+                <time datetime="@blogPost.Date.ToString("R")">@blogPost.Date.ToString("dd MMMM, yyyy") </time>
+                <p>@blogPost.Description</p>
+            </div>
+        </div>
+    </article>
+}

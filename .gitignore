@@ -262,3 +262,10 @@ __pycache__/
 
 # Custom ignores
 connectionStrings.config
+Logs/
+TEMP/
+umbraco.config
+NuGetBackup/
+cache/
+Media/
+umbraco.config
