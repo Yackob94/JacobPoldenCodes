@@ -244,16 +244,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Css\app.css">
-      <DependentUpon>app.scss</DependentUpon>
-    </Content>
     <Content Include="Content\Css\app.min.css">
       <DependentUpon>app.css</DependentUpon>
     </Content>
+    <Content Include="Content\Css\bootstrap-theme.css" />
+    <Content Include="Content\Css\bootstrap.css" />
     <Content Include="Content\Css\FontAwesome.css" />
     <Content Include="Content\Css\FontAwesome.min.css">
       <DependentUpon>FontAwesome.css</DependentUpon>
     </Content>
+    <Content Include="Content\Css\app.css" />
     <Content Include="Content\Favicons\android-icon-144x144.png" />
     <Content Include="Content\Favicons\android-icon-192x192.png" />
     <Content Include="Content\Favicons\android-icon-36x36.png" />
@@ -284,8 +284,11 @@
     <Content Include="Content\Images\CircleJacobSmall.png" />
     <Content Include="Content\Images\jpc_ico_hires.png" />
     <Content Include="Content\Images\jpc_logo_hires.png" />
+    <Content Include="Content\Scripts\bootstrap.js" />
+    <Content Include="Content\Scripts\jquery.js" />
     <Content Include="css\RTE.css" />
     <Content Include="favicon.ico" />
+    <Content Include="Gruntfile.js" />
     <Content Include="Media\1001\books.jpg" />
     <Content Include="Media\1001\Cached\BOO_4711668be1342976132fa2aa4b7d7f60df533ac1de2fa118a7f155037cde427d.jpeg" />
     <Content Include="Media\1001\Cached\IMG_35aee2427c7d8e8f89e26afeaad40bf5fe34636adfcdf19b6d14fff53a2fc1aa.jpeg" />
@@ -304,19 +307,6 @@
     <Content Include="Media\1004\sad-washing-machine.gif" />
     <Content Include="Media\1004\sad-washing-machine_thumb.gif" />
     <Content Include="Media\1004\sad-washing-machine_thumb.jpg" />
-    <Content Include="node_modules\bootstrap\dist\css\bootstrap-theme.css" />
-    <Content Include="node_modules\bootstrap\dist\css\bootstrap-theme.min.css" />
-    <Content Include="node_modules\bootstrap\dist\css\bootstrap.css" />
-    <Content Include="node_modules\bootstrap\dist\css\bootstrap.min.css" />
-    <Content Include="node_modules\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="node_modules\bootstrap\dist\js\bootstrap.js" />
-    <Content Include="node_modules\bootstrap\dist\js\bootstrap.min.js" />
-    <Content Include="node_modules\bootstrap\dist\js\npm.js" />
-    <Content Include="node_modules\jquery\dist\core.js" />
-    <Content Include="node_modules\jquery\dist\jquery.js" />
-    <Content Include="node_modules\jquery\dist\jquery.min.js" />
-    <Content Include="node_modules\jquery\dist\jquery.slim.js" />
-    <Content Include="node_modules\jquery\dist\jquery.slim.min.js" />
     <Content Include="packages.config" />
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
@@ -2815,19 +2805,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="package.json" />
-    <Content Include="node_modules\bootstrap\dist\css\bootstrap-theme.css.map" />
-    <Content Include="node_modules\bootstrap\dist\css\bootstrap-theme.min.css.map" />
-    <Content Include="node_modules\bootstrap\dist\css\bootstrap.css.map" />
-    <Content Include="node_modules\bootstrap\dist\css\bootstrap.min.css.map" />
-    <Content Include="node_modules\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="node_modules\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="node_modules\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="node_modules\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="node_modules\jquery\dist\jquery.min.map" />
-    <Content Include="node_modules\jquery\dist\jquery.slim.min.map" />
     <Content Include="manifest.json" />
-    <Content Include="Content\Css\_nav.scss" />
-    <Content Include="Content\Css\app.scss" />
+    <Content Include="Content\Css\_sass\_nav.scss" />
+    <Content Include="Content\Css\_sass\app.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -2836,7 +2816,7 @@
     <Content Include="Views\Blog.cshtml" />
     <Content Include="Views\BlogPost.cshtml" />
     <Content Include="ImageGen.ashx" />
-    <Content Include="Content\Css\_cv.scss" />
+    <Content Include="Content\Css\_sass\_cv.scss" />
     <Content Include="Content\Fonts\fontawesome-webfont.eot" />
     <Content Include="Content\Fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\Fonts\fontawesome-webfont.woff" />
@@ -2980,6 +2960,7 @@
     <Content Include="Umbraco\Webservices\UltimatePickerAutoCompleteHandler.ashx" />
     <Content Include="Views\AltHome.cshtml" />
     <Content Include="Media\Web.config" />
+    <Content Include="config\ImageGen.config" />
     <None Include="Properties\PublishProfiles\JacobPoldenCodes - Web Deploy.pubxml" />
     <Content Include="Umbraco\Install\Views\Web.config" />
     <Content Include="Umbraco\Xslt\Web.config" />

@@ -1,8 +1,13 @@
 {
   "name": "jacobpoldencodes",
   "version": "1.0.0",
+  "private": true,
   "devDependencies": {
     "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "jquery": "^3.1.1"
-  }
+  },
+  "author": "Jacob Polden"
 }

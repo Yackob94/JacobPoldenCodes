@@ -1,7 +1,7 @@
 ﻿[
   {
     "outputFile": "Content/Css/app.css",
-    "inputFile": "Content/Css/app.scss"
+    "inputFile": "Content/Css/_sass/app.scss"
   },
   {
     "outputFile": "Content/Css/FontAwesome.css",
