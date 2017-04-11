@@ -19,8 +19,7 @@
                 flatten: true,
                 filter: 'isFile',
                 src: [
-                    './bootstrap/dist/css/bootstrap.css',
-                    './bootstrap/dist/css/bootstrap-theme.css'
+                    './bootstrap/dist/css/bootstrap.css'
                 ]
             }
         },
@@ -28,7 +27,6 @@
             dist: {
                 files: [
                     './node_modules/bootstrap/dist/css/bootstrap.css',
-                    './node_modules/bootstrap/dist/css/bootstrap-theme.css',
                     './node_modules/bootstrap/dist/js/bootstrap.js',
                     './node_modules/jquery/dist/jquery.js'
                 ],

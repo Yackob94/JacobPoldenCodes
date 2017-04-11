@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_j>
+    <image>
+      <originalFileName>jpc_logo_hires.png</originalFileName>
+      <size>6012</size>
+      <dateLastModified>Mon, 27 Mar 2017 11:37:18 GMT</dateLastModified>
+      <width>1000</width>
+      <height>107</height>
+      <cachedImage>
+        <fileName>JPC_0aa01a29011256abe451349c28b8449a7b2df2815710afa1a6fbac00c930d666.png</fileName>
+        <dateCreated>Tue, 11 Apr 2017 13:04:36 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <rotate>0</rotate>
+        <flip />
+        <colorMode />
+        <crop />
+        <width>800</width>
+        <height>107</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>JPC_87ada34cae99010f765ff834109f0abc75a4411d92062129a76af8f8f56aa86e.png</fileName>
+        <dateCreated>Tue, 11 Apr 2017 13:04:56 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <rotate>0</rotate>
+        <flip />
+        <colorMode />
+        <crop />
+        <width>100</width>
+        <height>11</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>JPC_73ee45c1d68c1d23be4a0bc767b3fb9c0a8e4ea9592c4468fcbdceeaf71b52ea.png</fileName>
+        <dateCreated>Tue, 11 Apr 2017 13:05:00 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <rotate>0</rotate>
+        <flip />
+        <colorMode />
+        <crop />
+        <width>200</width>
+        <height>21</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>JPC_c22b128b0e95b113f919e69ab86985134e04ee850012f9e3ab191e96a66cf80f.png</fileName>
+        <dateCreated>Tue, 11 Apr 2017 13:05:03 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <rotate>0</rotate>
+        <flip />
+        <colorMode />
+        <crop />
+        <width>400</width>
+        <height>43</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_j>
+</imageIndex>

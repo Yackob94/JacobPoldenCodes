@@ -1,2 +1,53 @@
-﻿@inherits UmbracoViewPage<HomeRenderModel>
+﻿@using ClientDependency.Core.Mvc
+@using JacobPoldenCodes.Umbraco.Helpers
+@inherits UmbracoViewPage<HomeRenderModel>
+@{
+    Html.RequiresCss("~/Content/Css/blog.css");
+}
+<header>
+    <div class="container">
+        <div class="row vertical-align">
+            <div class="col-md-4 col-xs-12">
+                <img id="logo" src=@Umbraco.ImageResizerUrl("/Content/Images/jpc_logo_hires.png", width: 500) />
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <nav class="navbar-right">
+                    <a href="@Umbraco.NiceUrl(1056)" target="_blank" class="navbar-text navbar-link">Curriculum Vitae</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <main>
+            @if (Model.BlogPosts.Any())
+            {
+                foreach (var blogPost in Model.BlogPosts)
+                {
+                    <article>
+                        <div class="row-height">
+                            <div class="col-sm-2 hidden-xs col-sm-height col-sm-middle">
+                                <img class="img-responsive" src="@blogPost.ThumbnailUrl" />
+                            </div>
+                            <div class="col-lg-10">
+                                <a href="@blogPost.Url">
+                                    <h2>@blogPost.Title</h2>
+                                </a>
+                                <time datetime="@blogPost.Date.ToString("R")">@blogPost.Date.ToString("dd MMMM, yyyy") </time>
+                                <p>@blogPost.Description</p>
+                            </div>
+                        </div>
+                    </article>
+                }
+            }
+            else
+            {
+                <div class="col-xs-12 no-blogs">
+                    <p>Either the code is broken or nothing has been written!</p>
+                </div>
+            }
 
+        </main>
+    </div>
+</div>

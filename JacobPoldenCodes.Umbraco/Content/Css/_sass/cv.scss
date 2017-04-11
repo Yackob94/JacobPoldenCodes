@@ -3,7 +3,8 @@
 $textColor: #2d7788;
 $subTextColor: #97AAC3;
 
-body {background: #f5f5f5;
+body {
+    background-color: #f5f5f5 !important;
 
     @media(min-width:768px) {
         padding: 30px;
@@ -35,7 +36,7 @@ body {background: #f5f5f5;
         background: #2d7788;
         text-align: center;
         padding-top: 8px;
-        font-size: 16px;
+        font-size: 1rem;
         position: relative;
         top: -2px;
         vertical-align: middle;
@@ -61,7 +62,7 @@ body {background: #f5f5f5;
         .contact-list {
             .fa {
                 margin-right: 5px;
-                font-size: 18px;
+                font-size: 1.125rem;
                 vertical-align: middle;
             }
 
@@ -72,7 +73,7 @@ body {background: #f5f5f5;
 
         .container-block-title {
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 700;
             margin-top: 0;
             margin-bottom: 15px;
@@ -95,7 +96,7 @@ body {background: #f5f5f5;
             }
 
             .degree {
-                font-size: 16px;
+                font-size: 1rem;
                 margin-top: 0;
                 margin-bottom: 5px;
                 font-weight: 700;
@@ -173,7 +174,7 @@ body {background: #f5f5f5;
         }
 
         .project-title {
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 600;
             margin-top: 0;
             margin-bottom: 5px;
@@ -188,7 +189,7 @@ body {background: #f5f5f5;
         }
 
         .level-title {
-            font-size: 14px;
+            font-size: 0.875rem;
             margin-top: 0;
             margin-bottom: 12px;
             font-weight: 600;

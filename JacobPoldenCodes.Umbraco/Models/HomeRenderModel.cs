@@ -10,9 +10,10 @@ namespace JacobPoldenCodes.Umbraco.Models
 {
     public class HomeRenderModel : BaseRenderModel
     {
-       // public List<BlogPost> BlogPosts { get; set; }
+        public List<BlogPost> BlogPosts { get; set; }
         public HomeRenderModel(IPublishedContent content) : base(content)
         {
+            BlogPosts = new List<BlogPost>();
         }
     }
 }

@@ -1,32 +1,17 @@
-﻿body {
+﻿html {
+    //Bootstrap overrides this to 16px anyway, for some reason Chrome won't respect body value
+    font-size: 16px !important;
+}
+
+body {
     overflow-x: hidden;
-    /*font-size: 16px !important;*/
-    /*line-height: 1.8 !important;*/
     -webkit-font-smoothing: antialiased;
 }
 
-time {
-    color: rgba(0,0,0,.5);
-}
-
-article a {
-    color: #000;
-}
-
-.row-height {
-    display: table;
-    table-layout: fixed;
-    height: 100%;
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .col-sm-middle {
-        vertical-align: middle;
-    }
-    .col-sm-height {
-        display: table-cell;
-        float: none !important;
-        height: 100%;
+.vertical-align {
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
     }
 }
+

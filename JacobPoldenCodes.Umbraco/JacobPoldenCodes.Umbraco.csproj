@@ -244,16 +244,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Css\app.min.css">
-      <DependentUpon>app.css</DependentUpon>
+    <Content Include="Content\Css\blog.css" />
+    <Content Include="Content\Css\blog.min.css">
+      <DependentUpon>blog.css</DependentUpon>
     </Content>
-    <Content Include="Content\Css\bootstrap-theme.css" />
     <Content Include="Content\Css\bootstrap.css" />
+    <Content Include="Content\Css\cv.css" />
+    <Content Include="Content\Css\cv.min.css">
+      <DependentUpon>cv.css</DependentUpon>
+    </Content>
     <Content Include="Content\Css\FontAwesome.css" />
     <Content Include="Content\Css\FontAwesome.min.css">
       <DependentUpon>FontAwesome.css</DependentUpon>
     </Content>
-    <Content Include="Content\Css\app.css" />
     <Content Include="Content\Favicons\android-icon-144x144.png" />
     <Content Include="Content\Favicons\android-icon-192x192.png" />
     <Content Include="Content\Favicons\android-icon-36x36.png" />
@@ -794,7 +797,6 @@
     <Content Include="Umbraco\Images\Umbraco\userGroup.gif" />
     <Content Include="Umbraco\Images\Umbraco\userType.gif" />
     <Content Include="Umbraco\installer.html" />
-    <Content Include="Umbraco\Install\Legacy\loadStarterKits.ascx" />
     <Content Include="Umbraco\Js\app.js" />
     <Content Include="Umbraco\Js\canvasdesigner.config.js" />
     <Content Include="Umbraco\Js\canvasdesigner.front.js" />
@@ -2803,20 +2805,17 @@
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="package.json" />
     <Content Include="manifest.json" />
     <Content Include="Content\Css\_sass\_nav.scss" />
-    <Content Include="Content\Css\_sass\app.scss" />
+    <Content Include="Content\Css\_sass\blog.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <Content Include="Views\Shared\_Navigation.cshtml" />
     <Content Include="Views\Blog.cshtml" />
     <Content Include="Views\BlogPost.cshtml" />
-    <Content Include="ImageGen.ashx" />
-    <Content Include="Content\Css\_sass\_cv.scss" />
+    <Content Include="Content\Css\_sass\cv.scss" />
     <Content Include="Content\Fonts\fontawesome-webfont.eot" />
     <Content Include="Content\Fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\Fonts\fontawesome-webfont.woff" />
@@ -2857,7 +2856,6 @@
     <Content Include="Umbraco\assets\less\radius.less" />
     <Content Include="Umbraco\assets\less\shadow.less" />
     <Content Include="Umbraco\assets\less\slider.less" />
-    <Content Include="Umbraco\Install\Views\Index.cshtml" />
     <Content Include="Umbraco\lib\angular-dynamic-locale\tmhDynamicLocale.min.js.map" />
     <Content Include="Umbraco\lib\bootstrap-tabdrop\README.md" />
     <Content Include="Umbraco\lib\bootstrap\less\accordion.less" />
@@ -2961,9 +2959,9 @@
     <Content Include="Views\AltHome.cshtml" />
     <Content Include="Media\Web.config" />
     <Content Include="config\ImageGen.config" />
+    <Content Include="Content\Css\_sass\_base.scss" />
+    <Content Include="Views\Shared\_BaseLayout.cshtml" />
     <None Include="Properties\PublishProfiles\JacobPoldenCodes - Web Deploy.pubxml" />
-    <Content Include="Umbraco\Install\Views\Web.config" />
-    <Content Include="Umbraco\Xslt\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3003,7 +3001,7 @@
     <Compile Include="Controllers\BlogPostController.cs" />
     <Compile Include="Controllers\CurriculumVitaeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\NavigationSurfaceController.cs" />
+    <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Models\BaseRenderModel.cs" />
     <Compile Include="Models\BlogPost.cs" />
     <Compile Include="Models\BlogPostRenderModel.cs" />
@@ -3011,7 +3009,6 @@
     <Compile Include="Models\CurriculumVitaeRenderModel.cs" />
     <Compile Include="Models\HomeRenderModel.cs" />
     <Compile Include="Models\Interfaces\IMetatData.cs" />
-    <Compile Include="Models\Navigation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
