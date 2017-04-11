@@ -1,10 +1,14 @@
 ﻿[
-  {
-    "outputFile": "Content/Css/app.css",
-    "inputFile": "Content/Css/_sass/app.scss"
-  },
-  {
-    "outputFile": "Content/Css/FontAwesome.css",
-    "inputFile": "Content/Fonts/scss/font-awesome.scss"
-  }
+    {
+        "outputFile": "Content/Css/blog.css",
+        "inputFile": "Content/Css/_sass/blog.scss"
+    },
+    {
+        "outputFile": "Content/Css/cv.css",
+        "inputFile": "Content/Css/_sass/cv.scss"
+    },
+    {
+        "outputFile": "Content/Css/FontAwesome.css",
+        "inputFile": "Content/Fonts/scss/font-awesome.scss"
+    }
 ]
